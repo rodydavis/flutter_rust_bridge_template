@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 if (data == null) return const CircularProgressIndicator();
 
                 final Platform platform = data[0];
-                final release = data[1] ? 'Release' : 'Debug';
+                final String release = data[1] ? 'Release' : 'Debug';
 
                 return Text('${platform.name} ($release)', style: style);
               },
